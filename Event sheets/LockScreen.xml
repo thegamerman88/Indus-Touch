@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LockScreen</name>
+    <events>
+        <variable constant="0" name="Horas" sid="457573126845711" static="0" type="number">0</variable>
+        <include>StatusBar</include>
+        <event-block sid="752420345588173">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="317136688147695" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="388581609280427" type="TimeTEXT">
+                    <param id="0" name="Instance variable">F</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;H&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="980131916604080" type="TimeTEXT">
+                    <param id="0" name="Text">Date.Hours</param>
+                </action>
+                <action id="5" name="Set web font" sid="551723747546032" type="TimeTEXT">
+                    <param id="0" name="Family name">&quot;open_sansbold&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="890363950449440">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="893586534990004" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="795453281223370" type="TimeTEXT">
+                    <param id="0" name="Instance variable">F</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;M&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="929412592178694" type="TimeTEXT">
+                    <param id="0" name="Text">Date.Minutes</param>
+                </action>
+                <action id="5" name="Set web font" sid="191607368455054" type="TimeTEXT">
+                    <param id="0" name="Family name">&quot;open_sansbold&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="210826328250932">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="240509675047568" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="950164433998059" type="TimeTEXT">
+                    <param id="0" name="Instance variable">F</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;S&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="123446317011298" type="TimeTEXT">
+                    <param id="0" name="Text">Date.Seconds</param>
+                </action>
+                <action id="5" name="Set web font" sid="591376049497629" type="TimeTEXT">
+                    <param id="0" name="Family name">&quot;open_sansbold&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="429458473173350">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="801551444042577" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="721900305045598" type="Texto_Global">
+                    <param id="0" name="Instance variable">Funcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Hello&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="605453458145917" type="Texto_Global">
+                    <param id="0" name="Text">&quot;Olá, &quot; &amp; Authentication.DisplayName &amp; &quot;,&quot; &amp; &quot; Agora são:&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="746056435447929" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="288815751322248" type="Texto_Global">
+                    <param id="0" name="Pin to">swipe</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="222421696548963">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="905676333914808" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="837865512233647">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="923425948204537" type="Texto_Global">
+                            <param id="0" name="Unique ID">18</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Anchor" id="0" name="Set enabled" sid="919938965663461" type="Texto_Global">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Anchor" id="0" name="Set enabled" sid="937596783792327" type="swipe">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="867822337164151" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action behavior="Anchor" id="0" name="Set enabled" sid="832055539204695" type="Texto_Global">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Anchor" id="0" name="Set enabled" sid="278587849720495" type="swipe">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="109162749965663" type="TimeTEXT">
+                            <param id="0" name="Pin to">swipe</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="560154224570796" title="swipeLOCK">
+            <sub-events>
+                <event-block sid="358882853148954">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="737609019140348" type="swipe" />
+                        <condition id="-2" name="Compare Y" sid="755516288016202" type="swipe">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">50</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="630588744566075" type="swipe">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">-400</param>
+                        </condition>
+                        <condition behavior="LiteTween" id="0" inverted="1" name="Is active" sid="614634665839365" type="swipe" />
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="26" name="Create/Initialize tween" sid="638232457221114" type="swipe">
+                            <param id="0" name="Tweened property">8</param>
+                            <param id="1" name="Function">23</param>
+                            <param id="2" name="Target">&quot;50&quot;</param>
+                            <param id="3" name="Duration">0.5</param>
+                            <param id="4" name="Enforce mode">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="968651344878823" type="swipe">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="277601270013709">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="977983479993701" type="swipe">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">-400</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="486218292995537" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="12" name="Vibrate" sid="564806739129690" type="Browser">
+                            <param id="0" name="Pattern">&quot;100,0,0&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="617043383755795">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="457682287617030" type="swipe">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">50</param>
+                        </condition>
+                        <condition behavior="LiteTween" id="0" inverted="1" name="Is active" sid="582666281940123" type="swipe" />
+                    </conditions>
+                    <actions>
+                        <action behavior="DragDrop" id="1" name="Drop" sid="965383263207758" type="swipe" />
+                        <action id="-2" name="Set Y" sid="105276969977261" type="swipe">
+                            <param id="0" name="Y">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="106210428266970">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="190303367833671" type="swipe" />
+                        <condition id="-2" name="Compare Y" sid="458605223577803" type="swipe">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">-400</param>
+                        </condition>
+                        <condition behavior="LiteTween" id="0" inverted="1" name="Is active" sid="472839424220911" type="swipe" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="372200771871672" type="System">
+                            <param id="0" name="Layout">HomePage</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="286672082359963">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="834605493006451" type="swipe" />
+                <condition id="-7" name="Compare instance variable" sid="667911870947566" type="Texto_Global">
+                    <param id="0" name="Instance variable">Funcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;DBP&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="11" name="Reverse" sid="327714758574060" type="Texto_Global">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="865452621718652">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="865278156421547" type="swipe" />
+                <condition id="-7" name="Compare instance variable" sid="720905869748045" type="Texto_Global">
+                    <param id="0" name="Instance variable">Funcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;DBP&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="26" name="Create/Initialize tween" sid="442831155896677" type="Texto_Global">
+                    <param id="0" name="Tweened property">8</param>
+                    <param id="1" name="Function">0</param>
+                    <param id="2" name="Target">str(Texto_Global.Y+99)</param>
+                    <param id="3" name="Duration">0.3</param>
+                    <param id="4" name="Enforce mode">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="634509997418720" type="Texto_Global">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="689144422632758">
+            <conditions>
+                <condition id="-27" inverted="1" name="Effects are supported" sid="298652214028938" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="758707103243741" type="swipe2" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

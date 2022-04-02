@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>InBrowser</name>
+    <events>
+        <include>NavBar</include>
+        <include>StatusBar</include>
+        <event-block any="1" sid="801731831075656">
+            <conditions>
+                <condition id="0" name="On clicked" sid="754233685947971" type="BPH" />
+                <condition id="0" name="On key pressed" sid="163855012789586" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="495697765034377">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="319211342514908" type="System">
+                            <param id="0" name="First value">find(PesquisaInBrowser.Text, &quot;https&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">-1</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="338932415517959" type="System">
+                            <param id="0" name="First value">find(PesquisaInBrowser.Text, &quot;http&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="13" name="Go to URL" sid="722838750327265" type="IBIFR">
+                            <param id="0" name="URL">&quot;https://www.bing.com/search?q=&quot; &amp; replace(PesquisaInBrowser.Text, &quot; &quot;, &quot;+&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="257571813217590">
+            <conditions>
+                <condition id="0" name="On clicked" sid="882147300961441" type="BPH" />
+                <condition id="0" name="On key pressed" sid="194526069136077" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="236861686761193">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="635339599572158" type="System">
+                            <param id="0" name="First value">find(PesquisaInBrowser.Text, &quot;https&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="272265412448869" type="System">
+                            <param id="0" name="First value">find(PesquisaInBrowser.Text, &quot;http&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="13" name="Go to URL" sid="436551498049529" type="IBIFR">
+                            <param id="0" name="URL">PesquisaInBrowser.Text</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="771719694289261">
+            <conditions>
+                <condition id="21" name="Is in iframe" sid="273229491021947" type="IframeFilter" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="135212967140992" type="BPH" />
+                <action id="-9" name="Destroy" sid="595685126786291" type="IBIFR" />
+                <action id="-9" name="Destroy" sid="904045634023705" type="PesquisaInBrowser" />
+                <action id="0" name="Set text" sid="819693350532233" type="Texto_Global">
+                    <param id="0" name="Text">&quot;Não é possivel usar o InBrowser num Iframe.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="143750185229564">
+            <conditions>
+                <condition id="21" inverted="1" name="Is in iframe" sid="976060458092220" type="IframeFilter" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="889098210307514" type="Texto_Global">
+                    <param id="0" name="Text">&quot;Carregando...&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="827357446133435">
+            <conditions>
+                <condition id="8" name="Is loading" sid="443886770615001" type="IBIFR" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set CSS style" sid="511126200864039" type="IBIFR">
+                    <param id="0" name="Property name">&quot;opacity&quot;</param>
+                    <param id="1" name="Value">&quot;0&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="461011035362061">
+            <conditions>
+                <condition id="8" inverted="1" name="Is loading" sid="342985032333429" type="IBIFR" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set CSS style" sid="959959268898469" type="IBIFR">
+                    <param id="0" name="Property name">&quot;opacity&quot;</param>
+                    <param id="1" name="Value">&quot;100&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

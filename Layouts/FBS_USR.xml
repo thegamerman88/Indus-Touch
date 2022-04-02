@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2layout>
+    <name>FBS_USR</name>
+    <sid>579609464460626</sid>
+    <event-sheet>FBS_USR</event-sheet>
+    <size>
+        <width>720</width>
+        <height>1280</height>
+    </size>
+    <margins>
+        <horizontal>500</horizontal>
+        <vertical>500</vertical>
+    </margins>
+    <unbounded-scrolling>0</unbounded-scrolling>
+    <layers>
+        <layer name="Wallpaper" sid="275805164436359">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Wallpaper" uid="79">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>Window right</right-edge>
+                                <bottom-edge>Window bottom</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>720</width>
+                        <height>1280</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Status Bar" sid="987401975986853">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Color_Black" uid="80">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <ABC>0</ABC>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>Window right</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>720</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.699999988</opacity>
+                    </world>
+                </instance>
+                <instance type="BateryTEXT" uid="81">
+                    <properties>
+                        <text>Bateria: XX%</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Microsoft Sans Serif,-21,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>13</x>
+                        <y>5</y>
+                        <z>0</z>
+                        <width>146.924758911</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TimeTEXT" uid="82">
+                    <properties>
+                        <text>00:00</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Microsoft Sans Serif,-21,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Right</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-right</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <F></F>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window right</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>704</x>
+                        <y>5</y>
+                        <z>0</z>
+                        <width>71</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>1</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CarregandoSPR" uid="83">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>157</x>
+                        <y>26</y>
+                        <z>0</z>
+                        <width>15.468294144</width>
+                        <height>31.245954514</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501650155</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="BG" sid="440488733527212">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Color_White" uid="84">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0.1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>Window right</right-edge>
+                                <bottom-edge>Window bottom</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>360</x>
+                        <y>665.114746094</y>
+                        <z>0</z>
+                        <width>720</width>
+                        <height>1230.271362305</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.850000024</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Textos" sid="297250613399930">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Texto_Global" uid="85">
+                    <properties>
+                        <text>Entre na sua Indus Account.</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Microsoft Sans Serif,-32,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <Funcao></Funcao>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="MoveTo">
+                            <properties>
+                                <activated>Yes</activated>
+                                <max-speed>400</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
+                                <stop-by-solid>No</stop-by-solid>
+                                <continued-mode>No</continued-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>None</left-edge>
+                                <top-edge>None</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>EaseOutBounce</function>
+                                <target>100,100</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>2.5</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>269</x>
+                        <y>112.5</y>
+                        <z>0</z>
+                        <width>480</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="TxtBoxBG" sid="130519668407797">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
+            <effects />
+        </layer>
+        <layer name="OPTS" sid="508749583920802">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="BotaoSPR" uid="89">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <ButtonFct>LGIN</ButtonFct>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Button">
+                            <properties>
+                                <activated>Yes</activated>
+                                <click-mode>Released</click-mode>
+                                <activated-after-clicked>Yes</activated-after-clicked>
+                                <visible-checking>Yes</visible-checking>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>656</y>
+                        <z>0</z>
+                        <width>155.360321045</width>
+                        <height>48.334323883</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50222224</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BotaoTXT" uid="90">
+                    <properties>
+                        <text>Entrar</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Microsoft Sans Serif,-24,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>656</y>
+                        <z>0</z>
+                        <width>142.867431641</width>
+                        <height>33.731399536</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TxtBox_Email" uid="86">
+                    <properties>
+                        <text></text>
+                        <placeholder>Inisira o seu email</placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Email</type>
+                        <auto-font-size>No</auto-font-size>
+                        <id-optional></id-optional>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Plus">
+                            <properties>
+                                <class-optional></class-optional>
+                                <auto-font-size>None</auto-font-size>
+                                <font>Segoe UI</font>
+                                <font-style>Normal</font-style>
+                                <color>0</color>
+                                <alignment-horizontal>Left</alignment-horizontal>
+                                <alignment-vertical>Top</alignment-vertical>
+                                <background-type>Solid</background-type>
+                                <border>Yes</border>
+                                <context-menu>No</context-menu>
+                                <selectable>No</selectable>
+                                <text-decoration>None</text-decoration>
+                                <text-restrict>None</text-restrict>
+                                <text-transform>None</text-transform>
+                                <max-length>0</max-length>
+                                <webfont-url></webfont-url>
+                                <webfont-name></webfont-name>
+                                <background></background>
+                                <borders>3px solid rgb(0, 76, 127)</borders>
+                                <border-radius></border-radius>
+                                <outline>none</outline>
+                                <padding></padding>
+                                <shadow-text></shadow-text>
+                                <shadow-box></shadow-box>
+                                <text-restrict-allow></text-restrict-allow>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>97</x>
+                        <y>346</y>
+                        <z>0</z>
+                        <width>409.338897705</width>
+                        <height>51.80361557</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="TxtBox_Password" uid="87">
+                    <properties>
+                        <text></text>
+                        <placeholder>Insira sua senha</placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Password</type>
+                        <auto-font-size>No</auto-font-size>
+                        <id-optional></id-optional>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Plus">
+                            <properties>
+                                <class-optional></class-optional>
+                                <auto-font-size>None</auto-font-size>
+                                <font>Segoe UI</font>
+                                <font-style>Normal</font-style>
+                                <color>0</color>
+                                <alignment-horizontal>Left</alignment-horizontal>
+                                <alignment-vertical>Top</alignment-vertical>
+                                <background-type>Solid</background-type>
+                                <border>Yes</border>
+                                <context-menu>No</context-menu>
+                                <selectable>No</selectable>
+                                <text-decoration>None</text-decoration>
+                                <text-restrict>None</text-restrict>
+                                <text-transform>None</text-transform>
+                                <max-length>0</max-length>
+                                <webfont-url></webfont-url>
+                                <webfont-name></webfont-name>
+                                <background></background>
+                                <borders>3px solid rgb(0, 76, 127)</borders>
+                                <border-radius></border-radius>
+                                <outline>none</outline>
+                                <padding></padding>
+                                <shadow-text></shadow-text>
+                                <shadow-box></shadow-box>
+                                <text-restrict-allow></text-restrict-allow>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>97</x>
+                        <y>480</y>
+                        <z>0</z>
+                        <width>409.33895874</width>
+                        <height>51.803672791</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="BotaoSPR" uid="95">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <ButtonFct>EMS</ButtonFct>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Button">
+                            <properties>
+                                <activated>Yes</activated>
+                                <click-mode>Released</click-mode>
+                                <activated-after-clicked>Yes</activated-after-clicked>
+                                <visible-checking>Yes</visible-checking>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>137</x>
+                        <y>1237</y>
+                        <z>0</z>
+                        <width>245.154724121</width>
+                        <height>48.334323883</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50222224</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.100000001</opacity>
+                    </world>
+                </instance>
+                <instance type="BotaoTXT" uid="96">
+                    <properties>
+                        <text>Esqueci minha senha</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Microsoft Sans Serif,-24,400,0</font>
+                        <color>165,165,165</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>137</x>
+                        <y>1237</y>
+                        <z>0</z>
+                        <width>245.524719238</width>
+                        <height>33.731399536</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BotaoTXT" uid="98">
+                    <properties>
+                        <text>(O email de redefinição de senha será enviado pro email escrito acima.)</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Microsoft Sans Serif,-16,400,0</font>
+                        <color>165,165,165</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>301.60168457</x>
+                        <y>435.745330811</y>
+                        <z>0</z>
+                        <width>406.973022461</width>
+                        <height>49.946044922</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BotaoTXT" uid="167">
+                    <properties>
+                        <text>Erro: </text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Microsoft Sans Serif,-27,400,0</font>
+                        <color>255,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>301.60168457</x>
+                        <y>573.792297363</y>
+                        <z>0</z>
+                        <width>406.973022461</width>
+                        <height>49.946044922</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+    </layers>
+    <nonworld-instances>
+        <instance type="FirebaseAPIV3" uid="92">
+            <properties>
+                <api-key></api-key>
+                <auth-domain></auth-domain>
+                <database-url></database-url>
+                <storage-bucket></storage-bucket>
+                <log>No</log>
+            </properties>
+            <instance-variables>
+                <PreviewStart>0</PreviewStart>
+            </instance-variables>
+        </instance>
+        <instance type="Authentication" uid="93">
+            <properties>
+                <domain>indus-75be6.firebaseapp.com</domain>
+            </properties>
+        </instance>
+        <instance type="Firebase" uid="94">
+            <properties>
+                <domain></domain>
+                <connection-detection>Yes</connection-detection>
+                <server-time-offset-detection>Yes</server-time-offset-detection>
+            </properties>
+        </instance>
+    </nonworld-instances>
+    <effects />
+</c2layout>

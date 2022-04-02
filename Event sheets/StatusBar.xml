@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>StatusBar</name>
+    <events>
+        <event-block sid="592352815511675">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="584668989894577" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="804021518632072" type="TimeTEXT">
+                    <param id="0" name="Text">Date.Hours &amp; &quot;:&quot; &amp; Date.Minutes</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="279003506558591">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="501872133231171" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="690255509586399" type="BateryTEXT">
+                    <param id="0" name="Text">&quot;Bateria: &quot; &amp; Browser.BatteryLevel * 100 &amp; &quot;%&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="315564254874037">
+            <conditions>
+                <condition id="14" name="Is charging" sid="203400833870068" type="Browser" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="499308569097074" type="CarregandoSPR">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="873379353340494">
+            <conditions>
+                <condition id="14" inverted="1" name="Is charging" sid="489050279086899" type="Browser" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="894114319212522" type="CarregandoSPR">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="826893082946061" title="Firebase Start2">
+            <sub-events>
+                <event-block sid="196177042550023">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="455169178083898" type="System" />
+                        <condition id="-18" name="Is in preview" sid="505453324522514" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="368672550192197" type="FirebaseAPIV3">
+                            <param id="0" name="Instance variable">PreviewStart</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Initialize" sid="920806707909263" type="FirebaseAPIV3">
+                            <param id="0" name="Api key">&quot;AIzaSyB-UuQZVo1kfhjctrqdMOPYL17eXe49a-c&quot;</param>
+                            <param id="1" name="Auth domain">&quot;indus-75be6.firebaseapp.com&quot;</param>
+                            <param id="2" name="Database URL">&quot;https://indus-75be6-default-rtdb.firebaseio.com/&quot;</param>
+                            <param id="3" name="Storage bucket">&quot;gs://indus-75be6.appspot.com&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="218676354963477" type="FirebaseAPIV3">
+                            <param id="0" name="Instance variable">PreviewStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

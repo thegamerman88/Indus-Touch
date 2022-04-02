@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>HomePage</name>
+    <events>
+        <include>NavBar</include>
+        <include>StatusBar</include>
+        <event-group description="" sid="205714624773181" title="Swipe">
+            <sub-events>
+                <event-group description="" sid="406987178352900" title="Lock">
+                    <sub-events>
+                        <event-block sid="996347935534071">
+                            <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="207746989588767" type="Home" />
+                                <condition id="-1" name="Compare X" sid="927370946572827" type="Home">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">360</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="848940801923958">
+                                    <conditions>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="650132655477041" type="Home">
+                                            <param id="0" name="Object">Lock</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="509942955998154" type="Home">
+                                            <param id="0" name="X">360</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="491533776337036">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="690469695844930" type="Home">
+                                            <param id="0" name="Object">Lock</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="570165279617388" type="System">
+                                            <param id="0" name="Layout">LockScreen</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="212668515999073">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="387456295638488" type="Home">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">Lock.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="178378880603001" type="Home">
+                                    <param id="0" name="X">Lock.X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="368316470035830">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="748791805342402" type="Home">
+                                    <param id="0" name="Object">Lock</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="348156234831844" type="Lock">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="339864183990332">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="367054629802717" type="Home">
+                                    <param id="0" name="Object">Lock</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="604703510713946" type="Lock">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="181893547057223" title="Reboot">
+                    <sub-events>
+                        <event-block sid="580641066000654">
+                            <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="725560708340495" type="Home" />
+                                <condition id="-1" name="Compare X" sid="278207786877310" type="Home">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">360</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="142273069414693">
+                                    <conditions>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="644571083704541" type="Home">
+                                            <param id="0" name="Object">Reboot</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="972747181234922" type="Home">
+                                            <param id="0" name="X">360</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="654543651293811">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="275131356297434" type="Home">
+                                            <param id="0" name="Object">Reboot</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-4" name="Set layer visible" sid="966190218348289" type="System">
+                                            <param id="0" name="Layer">1</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="405777764930619" type="System">
+                                            <param id="0" name="Layer">2</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="616607268910406" type="System">
+                                            <param id="0" name="Layer">3</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="793627681224022" type="System">
+                                            <param id="0" name="Layer">4</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="477866731659087" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="409829905277780" type="System">
+                                            <param id="0" name="Layout">Boot</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="823905179696667">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="709434392445887" type="Home">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">Reboot.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="223084479449171" type="Home">
+                                    <param id="0" name="X">Reboot.X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="539183376578452">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="621437855388179" type="Home">
+                                    <param id="0" name="Object">Reboot</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="533878802985639" type="Reboot">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="821885940922139">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="182354317613503" type="Home">
+                                    <param id="0" name="Object">Reboot</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="984556375354316" type="Reboot">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-block sid="661061849350254">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="719375973348008" type="System">
+                    <param id="0" name="Layer">4</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-group description="" sid="633411163395883" title="DesktopIcons">
+                    <sub-events>
+                        <event-group description="" sid="592137756279062" title="InCam">
+                            <sub-events>
+                                <event-block sid="282837284865444">
+                                    <conditions>
+                                        <condition id="17" name="On tap object" sid="553291858245681" type="Touch">
+                                            <param id="0" name="Object">InCam_Icon</param>
+                                        </condition>
+                                        <condition behavior="DragDrop" id="3" inverted="1" name="Is enabled" sid="599470913491908" type="InCam_Icon" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="663782222217145" type="System">
+                                            <param id="0" name="Layout">InCam</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="810343360357760" title="InNote">
+                            <sub-events>
+                                <event-block sid="981207697924014">
+                                    <conditions>
+                                        <condition id="17" name="On tap object" sid="377883180341996" type="Touch">
+                                            <param id="0" name="Object">InNote_Icon</param>
+                                        </condition>
+                                        <condition behavior="DragDrop" id="3" inverted="1" name="Is enabled" sid="160387821512768" type="InNote_Icon" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="767033523216672" type="System">
+                                            <param id="0" name="Layout">InNote</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="985921943682708" title="InBrowser">
+                            <sub-events>
+                                <event-block sid="338375482689883">
+                                    <conditions>
+                                        <condition id="17" name="On tap object" sid="206045134627061" type="Touch">
+                                            <param id="0" name="Object">InBrowser_Icon</param>
+                                        </condition>
+                                        <condition behavior="DragDrop" id="3" inverted="1" name="Is enabled" sid="466687414121190" type="InBrowser_Icon" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="159197103513789" type="System">
+                                            <param id="0" name="Layout">InBrowser</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="372174112771616" title="InConfig">
+                            <sub-events>
+                                <event-block sid="950043081464799">
+                                    <conditions>
+                                        <condition id="17" name="On tap object" sid="432638777508088" type="Touch">
+                                            <param id="0" name="Object">InCfg_Icon</param>
+                                        </condition>
+                                        <condition behavior="DragDrop" id="3" inverted="1" name="Is enabled" sid="824591798283417" type="InCfg_Icon" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="973899551782288" type="System">
+                                            <param id="0" name="Layout">InCFGMenu</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="404912744621951" title="StartLayout">
+            <sub-events>
+                <event-block sid="585947437732227">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="300698520611023" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="368659391801019" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="135518190529504" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="524475423690695" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="575881280325265" type="System">
+                            <param id="0" name="Layer">4</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="995707291853455">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="134144278546379" type="Home" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="337024877789462">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="325980821409195" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="494256285150373" type="Home">
+                    <param id="0" name="Y">Lock.Y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

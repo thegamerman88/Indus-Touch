@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FBS_USR</name>
+    <events>
+        <variable constant="0" name="senha" sid="982812835584213" static="0" type="text"></variable>
+        <variable constant="0" name="email" sid="729587987973950" static="0" type="text"></variable>
+        <include>StatusBar</include>
+        <event-group description="" sid="996181893023343" title="REDEFINIR SENHA">
+            <sub-events>
+                <event-block sid="930782567199500">
+                    <conditions>
+                        <condition behavior="Button" id="1" name="On clicked" sid="358670427231901" type="BotaoSPR" />
+                        <condition id="-7" name="Compare instance variable" sid="611452045803278" type="BotaoSPR">
+                            <param id="0" name="Instance variable">ButtonFct</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;EMS&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Send password reset email" sid="441404999891360" type="Authentication">
+                            <param id="0" name="Email">TxtBox_Email.Text</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="321416720874787" title="Login">
+            <sub-events>
+                <event-block sid="785405394547163">
+                    <conditions>
+                        <condition behavior="Button" id="1" name="On clicked" sid="475497090914411" type="BotaoSPR" />
+                        <condition id="-7" name="Compare instance variable" sid="190319336810479" type="BotaoSPR">
+                            <param id="0" name="Instance variable">ButtonFct</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;LGIN&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Login" sid="405295667144158" type="Authentication">
+                            <param id="0" name="Email">TxtBox_Email.Text</param>
+                            <param id="1" name="Password">TxtBox_Password.Text</param>
+                            <param id="2" name="Remember">0</param>
+                        </action>
+                        <action id="0" name="Set item" sid="948900155445371" type="LocalStorage">
+                            <param id="0" name="Key">&quot;email&quot;</param>
+                            <param id="1" name="Value">TxtBox_Email.Text</param>
+                        </action>
+                        <action id="0" name="Set item" sid="930667140560464" type="LocalStorage">
+                            <param id="0" name="Key">&quot;password&quot;</param>
+                            <param id="1" name="Value">TxtBox_Password.Text</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="929642939299534">
+                            <conditions>
+                                <condition id="34" name="Is login" sid="372436267295782" type="Authentication" />
+                            </conditions>
+                            <actions>
+                                <action id="-43" name="Go to next/previous layout" sid="142713085250545" type="System">
+                                    <param id="0" name="Which">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="830122458830081">
+                    <conditions>
+                        <condition id="31" name="On login" sid="224889061788237" type="Authentication" />
+                    </conditions>
+                    <actions>
+                        <action id="-43" name="Go to next/previous layout" sid="328309934856220" type="System">
+                            <param id="0" name="Which">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="777589118199384">
+                    <conditions>
+                        <condition id="32" name="On login error" sid="999397065366832" type="Authentication" />
+                        <condition id="-14" name="Pick by unique ID" sid="547593412895940" type="BotaoTXT">
+                            <param id="0" name="Unique ID">167</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="533342599763145" type="BotaoTXT">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="961608388185920" type="BotaoTXT">
+                            <param id="0" name="Text">&quot;Erro: &quot; &amp; Authentication.ErrorDetail</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

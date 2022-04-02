@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>InCfgUser</name>
+    <events>
+        <variable constant="0" name="OptUsr" sid="310532978928243" static="0" type="number">0</variable>
+        <include>StatusBar</include>
+        <include>NavBar</include>
+        <event-group description="" sid="529149157511368" title="VoltarInCfg">
+            <sub-events>
+                <event-block sid="703793992270789">
+                    <conditions>
+                        <condition behavior="Button" id="1" name="On clicked" sid="620491719247074" type="BotaoSPR" />
+                        <condition id="-7" name="Compare instance variable" sid="285913108992218" type="BotaoSPR">
+                            <param id="0" name="Instance variable">ButtonFct</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;VoltarInCfg&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="897284890051408" type="System">
+                            <param id="0" name="Layout">InCFGMenu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="839439758834655" title="Inf">
+            <sub-events>
+                <event-block sid="249072868168547">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="536768141878806" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="171313182764943" type="EmailTxt">
+                            <param id="0" name="Text">Authentication.Email</param>
+                        </action>
+                        <action id="10" name="Load image from URL" sid="959629954905360" type="PFP">
+                            <param id="0" name="URI">Authentication.PhotoURL</param>
+                            <param id="1" name="Size">1</param>
+                            <param id="2" name="Cross-origin">0</param>
+                        </action>
+                        <action id="10" name="Load image from URL" sid="115272983172628" type="PFPPreview">
+                            <param id="0" name="URI">TxtBox_PhotoUrl.Text</param>
+                            <param id="1" name="Size">1</param>
+                            <param id="2" name="Cross-origin">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="341596525064009">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="302472608392380" type="Usertxt">
+                                    <param id="0" name="Instance variable">Funcao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;inf&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="229201656509328" type="Usertxt">
+                                    <param id="0" name="Text">Authentication.DisplayName</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="184931845089454">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="184045681657371" type="Usertxt">
+                                    <param id="0" name="Instance variable">Funcao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;EditP&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="984834621811210" type="Usertxt">
+                                    <param id="0" name="Text">TxtBox_UsrNm.Text</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="894271892275963">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="945966062774524" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="184090722913245" type="TxtBox_PhotoUrl">
+                            <param id="0" name="Text">Authentication.PhotoURL</param>
+                        </action>
+                        <action id="0" name="Set text" sid="391189920315998" type="TxtBox_UsrNm">
+                            <param id="0" name="Text">Authentication.DisplayName</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="235848648149414" title="Trocar">
+            <sub-events>
+                <event-group description="" sid="136830382034816" title="agr trocar msm">
+                    <sub-events>
+                        <event-block sid="242163498313052">
+                            <conditions>
+                                <condition behavior="Button" id="1" name="On clicked" sid="242269193041811" type="BotaoSPR" />
+                                <condition id="-7" name="Compare instance variable" sid="974848381608300" type="BotaoSPR">
+                                    <param id="0" name="Instance variable">ButtonFct</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Inf&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="492085923749918" type="System">
+                                    <param id="0" name="Variable">OptUsr</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="255233564645956">
+                            <conditions>
+                                <condition behavior="Button" id="1" name="On clicked" sid="415856071147955" type="BotaoSPR" />
+                                <condition id="-7" name="Compare instance variable" sid="171816966218003" type="BotaoSPR">
+                                    <param id="0" name="Instance variable">ButtonFct</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Edit&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="751540680492537" type="System">
+                                    <param id="0" name="Variable">OptUsr</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="822893899145632">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="368421596201434" type="System">
+                            <param id="0" name="Variable">OptUsr</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="117661873734551" type="System">
+                            <param id="0" name="Layer">4</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="932155972992960" type="System">
+                            <param id="0" name="Layer">5</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="4" name="Set enabled" sid="182701445288467" type="TxtBox_PhotoUrl">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="4" name="Set enabled" sid="587723631761289" type="TxtBox_UsrNm">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="686291980338483">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="460120886480828" type="Texto_Global">
+                                    <param id="0" name="Instance variable">Funcao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;CFGTXT&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="768939962576408" type="Texto_Global">
+                                    <param id="0" name="Text">&quot;Informações do Usuário&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="220598522560441">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="161762019503673" type="System">
+                            <param id="0" name="Variable">OptUsr</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="842977788459338" type="System">
+                            <param id="0" name="Layer">4</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="815350213215139" type="System">
+                            <param id="0" name="Layer">5</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set enabled" sid="738553085714426" type="TxtBox_PhotoUrl">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="4" name="Set enabled" sid="382937238858049" type="TxtBox_UsrNm">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="511825888283411">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="248868213880276" type="Texto_Global">
+                                    <param id="0" name="Instance variable">Funcao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;CFGTXT&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="916451700354768" type="Texto_Global">
+                                    <param id="0" name="Text">&quot;Editar informações do Usuário&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="130189140888782" title="Aplicar">
+            <sub-events>
+                <event-block sid="194185096151993">
+                    <conditions>
+                        <condition behavior="Button" id="1" name="On clicked" sid="261814296749894" type="BotaoSPR" />
+                        <condition id="-7" name="Compare instance variable" sid="547409705152250" type="BotaoSPR">
+                            <param id="0" name="Instance variable">ButtonFct</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;AplicarUsrEdit&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="895225381621664" type="System">
+                            <param id="0" name="Variable">OptUsr</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="61" name="Update profile" sid="661481241857274" type="Authentication">
+                            <param id="0" name="Display name">TxtBox_UsrNm.Text</param>
+                            <param id="1" name="Photo URL">TxtBox_PhotoUrl.Text</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="811809603135192">
+                    <conditions>
+                        <condition id="9" name="On updated profile" sid="258910583563947" type="Authentication" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Add Notification" sid="138945216321046" type="PushJs">
+                            <param id="0" name="Title">&quot;Aviso!&quot;</param>
+                            <param id="1" name="Body">&quot;Conta atualizada com sucesso!&quot;</param>
+                            <param id="2" name="Icon">&quot;&quot;</param>
+                            <param id="3" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="4" name="Timeout">5000</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="135485352233882">
+                    <conditions>
+                        <condition id="10" name="On updated profile error" sid="902364237347427" type="Authentication" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Add Notification" sid="801298839607969" type="PushJs">
+                            <param id="0" name="Title">&quot;Aviso!&quot;</param>
+                            <param id="1" name="Body">Authentication.ErrorMessage</param>
+                            <param id="2" name="Icon">&quot;&quot;</param>
+                            <param id="3" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="4" name="Timeout">5000</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

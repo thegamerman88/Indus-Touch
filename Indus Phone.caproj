@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Indus Phone</name>
+    <description>Indus para celular!</description>
+    <version>orb221303</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.indussoftwares.indusphone</app-id>
+    <unique-id>qapmam9uvekb</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="PlayLive" id="HTML_iFrame" version="1.419999957">HTML | iFrame</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Andrews Vinícius &amp; nickersoft" id="PushJs" version="1">PushJs</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_Date" version="1">Date</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_Firebase" version="1">Firebase</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_FirebaseAPIV3" version="1">Firebase API v3</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_Firebase_Authentication" version="0.100000001">Authentication</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_IframeFilter" version="0.800000012">Iframe filter</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="UserMedia" version="1">User Media</plugin>
+        <plugin author="Armaldio" id="armaldio_electron" version="1">Electron</plugin>
+        <plugin author="Scirra" id="filechooser" version="1">File chooser</plugin>
+        <plugin author="Rex.Rainbow" id="rex_TouchWrap" version="0.100000001">Touch wrap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_Button2" version="0.100000001">Button</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_MoveTo" version="1">MoveTo</behavior>
+        <behavior author="PlayLive" id="Textbox_Plus" version="1.00999999">Plus</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="blurhorizontal">Blur Horizontal</effect>
+        <effect author="Scirra" id="blurvertical">Blur Vertical</effect>
+        <effect author="Scirra" id="divide">Divide</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>720</width>
+        <height>1280</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Boot</first-layout>
+    <use-loader-layout>1</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale outer</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Nothing (not recommended)</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Custom</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="PluginsGlobais">
+            <object-folder name="Firebase">
+                <object-type global="1" name="FirebaseAPIV3" sid="271388154361797">
+                    <plugin id="Rex_FirebaseAPIV3" />
+                    <instance-variables>
+                        <instance-variable name="PreviewStart" sid="445255037084800" type="number" />
+                    </instance-variables>
+                </object-type>
+                <object-type global="1" name="Firebase" sid="830837212668946">
+                    <plugin id="Rex_Firebase" />
+                </object-type>
+            </object-folder>
+            <object-type name="Browser" sid="297444991282794">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="Touch" sid="997560360615792">
+                <plugin id="Touch" />
+            </object-type>
+            <object-type name="TouchWrap" sid="992841132536214">
+                <plugin id="rex_TouchWrap" />
+            </object-type>
+            <object-type name="AJAX" sid="907850903151919">
+                <plugin id="AJAX" />
+            </object-type>
+            <object-type name="Keyboard" sid="700487861348180">
+                <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="LocalStorage" sid="814877798887159">
+                <plugin id="LocalStorage" />
+            </object-type>
+            <object-type name="PushJs" sid="717754341256432">
+                <plugin id="PushJs" />
+            </object-type>
+            <object-type global="1" name="IframeFilter" sid="767747615350988">
+                <plugin id="Rex_IframeFilter" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Iniciar">
+            <object-folder name="Boot">
+                <object-type name="Text_Boot" sid="672389257120764">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="595126120197564">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="IndusLogoBoot" sid="337154807224667">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="MoveTo" sid="945707059391990">
+                            <behavior id="Rex_MoveTo" />
+                        </behavior-type>
+                        <behavior-type name="Anchor" sid="535151606447804">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299870772997977" speed="0">
+                            <frame duration="1" hotspotX="0.480469" hotspotY="0.5" original-source="C:\Users\thegamerman88\My Drive\Construct_2_Files\Imagens\Indus\Logos\Indus 2\In2Sky512.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="ObjetosNãoUnicos">
+            <object-type name="Color_Black" sid="439133904710111">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ABC" sid="889785024316504" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Solid" sid="377512358887803">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="510768249799934">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Anchor" sid="988731987412429">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791347804535093" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Color_White" sid="260805848675057">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="117099174899608">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="662121832565725">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Anchor" sid="603017272350782">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="401335091766706" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Wallpaper" sid="286190873041848">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="287036771174371">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="597635332790063">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839372009925502" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\thegamerman88\Downloads\6cf20444e577b9d1132efef8e969a12c.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type global="1" name="Date" sid="289173116522121">
+                <plugin id="Rex_Date" />
+            </object-type>
+            <object-type name="Texto_Global" sid="572434466351968">
+                <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="Funcao" sid="303698607989117" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Pin" sid="745611454730919">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="MoveTo" sid="106006709006601">
+                        <behavior id="Rex_MoveTo" />
+                    </behavior-type>
+                    <behavior-type name="Anchor" sid="407386792704509">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                    <behavior-type name="LiteTween" sid="206193053131270">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="PFP" sid="801278939580548">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="133076998829361">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="454301615473766" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PFPPreview" sid="442914980807564">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="356923501876048">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="186697720015793" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="StatusBar">
+            <object-type name="BateryTEXT" sid="595519995251063">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="470283304354576">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="499588016766014">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="TimeTEXT" sid="510332406158767">
+                <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="F" sid="438346465990834" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Pin" sid="138038122334340">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Anchor" sid="720997808128726">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="CarregandoSPR" sid="838496872604826">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="406328826213256">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="839801653220870">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145200333193321" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.50165" original-source="C:\Users\thegamerman88\OneDrive\Imagens\Indus\Phone\caregando.png">
+                            <collision-poly>
+                                <point x="0.193333" y="0.0957096" />
+                                <point x="0.5" y="0" />
+                                <point x="0.986667" y="0.00660066" />
+                                <point x="0.54" y="0.49835" />
+                                <point x="0.426667" y="0.716172" />
+                                <point x="0.5" y="0.656766" />
+                                <point x="0.00666667" y="0.9967" />
+                                <point x="0.0933333" y="0.49835" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="HomePage">
+            <object-type name="InNote_Icon" sid="689461886806386">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="826824146902533">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                    <behavior-type name="DragDrop" sid="631743694293771">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="264326263151909">
+                        <behavior id="bound" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="206811373470041" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thegamerman88\My Drive\Construct_2_Files\Imagens\Indus\Icones\InNotesSky.png">
+                            <collision-poly>
+                                <point x="0.146484" y="0.146484" />
+                                <point x="0.5" y="0" />
+                                <point x="0.853516" y="0.146484" />
+                                <point x="1" y="0.5" />
+                                <point x="0.853516" y="0.853516" />
+                                <point x="0.5" y="1" />
+                                <point x="0.146484" y="0.853516" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="InBrowser_Icon" sid="730447692464279">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="824350855225315">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="906552234588212" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thegamerman88\OneDrive\Imagens\Indus\Icones\inbrowser.png">
+                            <collision-poly>
+                                <point x="0.146484" y="0.146484" />
+                                <point x="0.5" y="0" />
+                                <point x="0.853516" y="0.146484" />
+                                <point x="1" y="0.5" />
+                                <point x="0.853516" y="0.853516" />
+                                <point x="0.5" y="1" />
+                                <point x="0.146484" y="0.853516" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Grid" sid="262444591122174">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\thegamerman88\OneDrive\Imagens\grid.png" />
+            </object-type>
+            <object-type name="InCam_Icon" sid="906429255899468">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="748669636508791">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                    <behavior-type name="DragDrop" sid="703375056756082">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="757916960469102">
+                        <behavior id="bound" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="138805470670639" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thegamerman88\Pictures\Indus\Icones\INCAMPSD.png">
+                            <collision-poly>
+                                <point x="0.146484" y="0.146484" />
+                                <point x="0.5" y="0" />
+                                <point x="0.853516" y="0.146484" />
+                                <point x="1" y="0.5" />
+                                <point x="0.853516" y="0.853516" />
+                                <point x="0.5" y="1" />
+                                <point x="0.146484" y="0.853516" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="InCfg_Icon" sid="138577910711979">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="407867660229473">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                    <behavior-type name="DragDrop" sid="411501436033878">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="622302143682673">
+                        <behavior id="bound" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="236068445227726" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thegamerman88\My Drive\Construct_2_Files\Imagens\Indus\Icones\InConfigSky.png">
+                            <collision-poly>
+                                <point x="0.146484" y="0.146484" />
+                                <point x="0.5" y="0" />
+                                <point x="0.853516" y="0.146484" />
+                                <point x="1" y="0.5" />
+                                <point x="0.853516" y="0.853516" />
+                                <point x="0.5" y="1" />
+                                <point x="0.146484" y="0.853516" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="NavBar">
+            <object-folder name="HomePage">
+                <object-type name="Lock" sid="261613709429125">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="848702745767259">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                        <behavior-type name="Persist" sid="517617401053447">
+                            <behavior id="Persist" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116503159496263" speed="0">
+                            <frame duration="1" hotspotX="0.503571" hotspotY="0.503571" original-source="C:\Users\thegamerman88\My Drive\Construct_2_Files\Imagens\Indus\Icones brancos sem fundo\Lock.png">
+                                <collision-poly>
+                                    <point x="0.160714" y="0" />
+                                    <point x="0.846428" y="0" />
+                                    <point x="0.846428" y="1" />
+                                    <point x="0.160714" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.503571" hotspotY="0.503571">
+                                <collision-poly>
+                                    <point x="0.160714" y="0" />
+                                    <point x="0.846428" y="0" />
+                                    <point x="0.846428" y="1" />
+                                    <point x="0.160714" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Reboot" sid="450570814947837">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="853511108316203">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                        <behavior-type name="Persist" sid="952001747942591">
+                            <behavior id="Persist" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="365275348213002" speed="0">
+                            <frame duration="1" hotspotX="0.524793" hotspotY="0.5" original-source="C:\Users\thegamerman88\My Drive\Construct_2_Files\Imagens\Indus\Icones brancos sem fundo\Restart.png" />
+                            <frame duration="1" hotspotX="0.524793" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="Home" sid="894671436339064">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="226658917595229">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="Anchor" sid="338165924914192">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231908953776058" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thegamerman88\Downloads\edit1SYTBI0R.png">
+                            <collision-poly>
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0.03125" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.828125" y="0.828125" />
+                                <point x="0.5" y="0.96875" />
+                                <point x="0.171875" y="0.828125" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Apps">
+            <object-folder name="InNote">
+                <object-type name="TXTBOX_InNote" sid="246086402944405">
+                    <plugin id="TextBox" />
+                    <behaviors>
+                        <behavior-type name="Plus" sid="311754982290774">
+                            <behavior id="Textbox_Plus" />
+                        </behavior-type>
+                        <behavior-type name="Anchor" sid="657488713268319">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="txtload" sid="263379008019652">
+                    <plugin id="filechooser" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="454981999027352">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+            </object-folder>
+            <object-folder name="InBrowser">
+                <object-type name="IBIFR" sid="567502316294584">
+                    <plugin id="HTML_iFrame" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="566142436146013">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="PesquisaInBrowser" sid="262420987052358">
+                    <plugin id="TextBox" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="766764823852205">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="BPH" sid="297004493952313">
+                    <plugin id="Button" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="750257466932048">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                        <behavior-type name="Plus" sid="264856736103623">
+                            <behavior id="Textbox_Plus" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="voltar" sid="873159337570377">
+                    <plugin id="Button" />
+                </object-type>
+                <object-type name="ir" sid="765793493306522">
+                    <plugin id="Button" />
+                </object-type>
+            </object-folder>
+            <object-folder name="InCam">
+                <object-type name="UserMedia" sid="535728552183476">
+                    <plugin id="UserMedia" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="747742036017439">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="TakeShot" sid="545614482793656">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Button" sid="981020310564133">
+                            <behavior id="Rex_Button2" />
+                        </behavior-type>
+                        <behavior-type name="Anchor" sid="228374812589711">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="139312266117572" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thegamerman88\Downloads\edit1SYTBI0R.png">
+                                <collision-poly>
+                                    <point x="0.171875" y="0.171875" />
+                                    <point x="0.5" y="0.03125" />
+                                    <point x="0.828125" y="0.171875" />
+                                    <point x="0.96875" y="0.5" />
+                                    <point x="0.828125" y="0.828125" />
+                                    <point x="0.5" y="0.96875" />
+                                    <point x="0.171875" y="0.828125" />
+                                    <point x="0.03125" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="InConfig">
+                <object-folder name="Icones">
+                    <object-type name="User" sid="956350678973688">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Anchor" sid="388992727131168">
+                                <behavior id="Anchor" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="499866850002592" speed="5">
+                                <frame duration="1" hotspotX="0.501466" hotspotY="0.501247" original-source="C:\Users\thegamerman88\Pictures\Indus\Icones\inconfigs\userinconfigs.png" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="HomeCfg" sid="537423267064262">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Anchor" sid="179835377903857">
+                                <behavior id="Anchor" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="294992532998370" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thegamerman88\Pictures\Indus\Icones\inconfigs\Nova pasta\home.png">
+                                    <collision-poly>
+                                        <point x="0.261719" y="0.261719" />
+                                        <point x="0.5" y="0.0664063" />
+                                        <point x="0.738281" y="0.261719" />
+                                        <point x="0.953125" y="0.5" />
+                                        <point x="0.832031" y="0.832031" />
+                                        <point x="0.5" y="0.660156" />
+                                        <point x="0.160156" y="0.839844" />
+                                        <point x="0.046875" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="User2" sid="834501204398631">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Anchor" sid="298632285071620">
+                                <behavior id="Anchor" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="532809844110702" speed="5">
+                                <frame duration="1" hotspotX="0.503049" hotspotY="0.43287" original-source="C:\Users\thegamerman88\Pictures\Indus\Icones\inconfigs\Nova pasta\useredit.png" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="User">
+                    <object-type name="Usertxt" sid="551947205693672">
+                        <plugin id="Text" />
+                        <instance-variables>
+                            <instance-variable name="Funcao" sid="530594503295659" type="string" />
+                        </instance-variables>
+                        <behaviors>
+                            <behavior-type name="Anchor" sid="513310614574661">
+                                <behavior id="Anchor" />
+                            </behavior-type>
+                        </behaviors>
+                    </object-type>
+                    <object-type name="EmailTxt" sid="599003010836243">
+                        <plugin id="Text" />
+                        <instance-variables>
+                            <instance-variable name="Funcao" sid="429478399280545" type="string" />
+                        </instance-variables>
+                        <behaviors>
+                            <behavior-type name="Anchor" sid="587189187111170">
+                                <behavior id="Anchor" />
+                            </behavior-type>
+                        </behaviors>
+                    </object-type>
+                </object-folder>
+                <object-type name="BordaOpc" sid="826699225939806">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="213262493279138">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="118709542642641" speed="5">
+                            <frame duration="1" hotspotX="0.505882" hotspotY="0.505882" original-source="C:\Users\thegamerman88\Pictures\Indus\referencias\b.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.952941" y="0" />
+                                    <point x="0.952941" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="button">
+            <object-type name="BotaoSPR" sid="565355087823400">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ButtonFct" sid="419367147724328" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Button" sid="134727772743139">
+                        <behavior id="Rex_Button2" />
+                    </behavior-type>
+                    <behavior-type name="Anchor" sid="105279553150031">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="270662521285096" speed="0">
+                        <frame duration="1" hotspotX="0.502222" hotspotY="0.5" original-source="C:\Users\thegamerman88\OneDrive\Imagens\Indus\botão\buttonhover.png">
+                            <collision-poly>
+                                <point x="0.04" y="0.128571" />
+                                <point x="0.497778" y="0.0142857" />
+                                <point x="0.96" y="0.128571" />
+                                <point x="0.995556" y="0.5" />
+                                <point x="0.96" y="0.871429" />
+                                <point x="0.497778" y="0.985714" />
+                                <point x="0.04" y="0.871429" />
+                                <point x="0.00444444" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BotaoTXT" sid="197719816342435">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="501178736545321">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+        </object-folder>
+        <object-folder name="FirstBoot Setup" />
+        <object-folder name="Indus Account">
+            <object-type name="TxtBox_Email" sid="342410217712446">
+                <plugin id="TextBox" />
+                <behaviors>
+                    <behavior-type name="Plus" sid="751228891364537">
+                        <behavior id="Textbox_Plus" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="TxtBox_Password" sid="542578791408928">
+                <plugin id="TextBox" />
+                <behaviors>
+                    <behavior-type name="Plus" sid="693292163986648">
+                        <behavior id="Textbox_Plus" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type global="1" name="Authentication" sid="813727161860091">
+                <plugin id="Rex_Firebase_Authentication" />
+            </object-type>
+            <object-type name="TxtBox_UsrNm" sid="232135117674073">
+                <plugin id="TextBox" />
+                <behaviors>
+                    <behavior-type name="Plus" sid="873775952467495">
+                        <behavior id="Textbox_Plus" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="TxtBox_PhotoUrl" sid="708734254224345">
+                <plugin id="TextBox" />
+                <behaviors>
+                    <behavior-type name="Plus" sid="521577280530181">
+                        <behavior id="Textbox_Plus" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+        </object-folder>
+        <object-folder name="TxtBoxBG" />
+        <object-folder name="lock">
+            <object-type name="swipe" sid="471564795247641">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="629855791829042">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="LiteTween" sid="174199802806238">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                    <behavior-type name="Anchor" sid="170626733050167">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="340753534289537" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="swipe2" sid="830509312472805">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="201114162833043">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="LiteTween" sid="348594127270315">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="Divide">
+                        <effect id="divide" />
+                    </effect-type>
+                    <effect-type name="BlurHorizontal">
+                        <effect id="blurhorizontal" />
+                    </effect-type>
+                    <effect-type name="BlurVertical">
+                        <effect id="blurvertical" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351942700516233" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="CUR_Default">
+            <object-type name="CUR_Default" sid="590692811645907">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="662459774828629" speed="5">
+                        <frame duration="1" hotspotX="0.125" hotspotY="0.125" original-source="C:\Users\thegamerman88\Pictures\Indus\cursor.png">
+                            <collision-poly>
+                                <point x="0.125" y="0.125" />
+                                <point x="0.5" y="0.125" />
+                                <point x="0.75" y="0.25" />
+                                <point x="0.875" y="0.5" />
+                                <point x="0.78125" y="0.78125" />
+                                <point x="0.5" y="0.875" />
+                                <point x="0.21875" y="0.78125" />
+                                <point x="0.125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Mouse" sid="530961799758899">
+                <plugin id="Mouse" />
+            </object-type>
+        </object-folder>
+        <object-type name="Electron" sid="652561923340733">
+            <plugin id="armaldio_electron" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout-folder name="Iniciar">
+            <layout>Boot.xml</layout>
+        </layout-folder>
+        <layout-folder name="FirstBoot Setup">
+            <layout>FBS_A.xml</layout>
+            <layout>FBS_USR.xml</layout>
+            <layout>FBS_END.xml</layout>
+        </layout-folder>
+        <layout-folder name="HomePage">
+            <layout>LockScreen.xml</layout>
+            <layout>HomePage.xml</layout>
+        </layout-folder>
+        <layout-folder name="Apps">
+            <layout-folder name="InCam">
+                <layout>InCam.xml</layout>
+            </layout-folder>
+            <layout-folder name="InNote">
+                <layout>InNote.xml</layout>
+            </layout-folder>
+            <layout-folder name="InBrowser">
+                <layout>InBrowser.xml</layout>
+            </layout-folder>
+            <layout-folder name="InConfig">
+                <layout-folder name="Configs">
+                    <layout>InCfgUser.xml</layout>
+                </layout-folder>
+                <layout>InCFGMenu.xml</layout>
+            </layout-folder>
+            <layout-folder name="Template">
+                <layout>Template.xml</layout>
+            </layout-folder>
+        </layout-folder>
+    </layout-folder>
+    <event-folder>
+        <event-folder name="Iniciar">
+            <event-sheet>BootES.xml</event-sheet>
+        </event-folder>
+        <event-folder name="HomePage">
+            <event-sheet>LockScreen.xml</event-sheet>
+            <event-sheet>HomePage.xml</event-sheet>
+        </event-folder>
+        <event-folder name="Funcoes">
+            <event-sheet>StatusBar.xml</event-sheet>
+            <event-sheet>NavBar.xml</event-sheet>
+            <event-sheet>Botao.xml</event-sheet>
+        </event-folder>
+        <event-folder name="Apps">
+            <event-folder name="InNote">
+                <event-sheet>InNote.xml</event-sheet>
+            </event-folder>
+            <event-folder name="InBrowser">
+                <event-sheet>InBrowser.xml</event-sheet>
+            </event-folder>
+            <event-folder name="InCam">
+                <event-sheet>InCam.xml</event-sheet>
+            </event-folder>
+            <event-folder name="InConfig">
+                <event-folder name="Configs">
+                    <event-sheet>InCfgUser.xml</event-sheet>
+                </event-folder>
+                <event-sheet>InCFGMenu.xml</event-sheet>
+            </event-folder>
+        </event-folder>
+        <event-folder name="FirstBoot Setup">
+            <event-sheet>FBS_A.xml</event-sheet>
+            <event-sheet>FBS_USR.xml</event-sheet>
+        </event-folder>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Browser" uid="4" />
+        <global-instance type="Touch" uid="5">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="TouchWrap" uid="30">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+                <enable>Yes</enable>
+            </properties>
+        </global-instance>
+        <global-instance type="AJAX" uid="34" />
+        <global-instance type="Keyboard" uid="53" />
+        <global-instance type="LocalStorage" uid="76" />
+        <global-instance type="PushJs" uid="159">
+            <properties>
+                <close-on-click>false</close-on-click>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="165" />
+        <global-instance type="Electron" uid="166" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="opensans-bold-webfont.woff" />
+        <file name="opensans-bold-webfont.woff2" />
+        <file name="stylesheet.css" />
+    </files-folder>
+</c2project>

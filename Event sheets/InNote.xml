@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>InNote</name>
+    <events>
+        <include>Botao</include>
+        <variable constant="0" name="InNoteText" sid="298750660064250" static="0" type="text"></variable>
+        <include>StatusBar</include>
+        <include>NavBar</include>
+        <event-block sid="984623520036450">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="565558090050222" type="System" />
+            </conditions>
+            <actions>
+                <action id="1" name="Set CSS style" sid="483654729887799" type="txtload">
+                    <param id="0" name="Property name">&quot;opacity&quot;</param>
+                    <param id="1" name="Value">&quot;0&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="901127766153302" title="InNoteText">
+            <sub-events>
+                <event-block sid="289824446886114">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="564058742263992" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="316131044840688" type="TXTBOX_InNote">
+                            <param id="0" name="Text">InNoteText</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="747527867061032">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="602098580920064" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="608584841592354" type="System">
+                            <param id="0" name="Variable">InNoteText</param>
+                            <param id="1" name="Value">TXTBOX_InNote.Text</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="376944254363786" title="Salvar">
+            <sub-events>
+                <event-block sid="313043878723884">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="756165774078183" type="Touch">
+                            <param id="0" name="Object">BotaoSPR</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="567087680540352" type="BotaoSPR">
+                            <param id="0" name="Unique ID">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="20" name="Invoke download of string" sid="269332729362180" type="Browser">
+                            <param id="0" name="String">TXTBOX_InNote.Text</param>
+                            <param id="1" name="MIME type">&quot;application/txt&quot;</param>
+                            <param id="2" name="Filename">&quot;InNote.txt&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="590260576951759" title="Carregar" />
+        <event-block sid="129216141428476">
+            <conditions>
+                <condition id="0" name="On changed" sid="877552970034386" type="txtload" />
+            </conditions>
+            <actions>
+                <action id="0" name="Request URL" sid="160572664375588" type="AJAX">
+                    <param id="0" name="Tag">&quot;file&quot;</param>
+                    <param id="1" name="URL">txtload.FileURLAt(0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="924013979583847">
+            <conditions>
+                <condition id="0" name="On completed" sid="510554960603029" type="AJAX">
+                    <param id="0" name="Tag">&quot;file&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="202232041219402" type="TXTBOX_InNote">
+                    <param id="0" name="Text">AJAX.LastData</param>
+                </action>
+                <action id="2" name="Release file" sid="588413153835846" type="txtload">
+                    <param id="0" name="File URL">txtload.FileURLAt(0)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

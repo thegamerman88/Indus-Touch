@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>InCam</name>
+    <events>
+        <include>Botao</include>
+        <include>StatusBar</include>
+        <include>NavBar</include>
+        <event-block sid="349183275665257">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="424412410811304" type="System" />
+            </conditions>
+            <actions>
+                <action id="10" name="Get media sources" sid="719941052301672" type="UserMedia" />
+            </actions>
+        </event-block>
+        <event-block sid="752815011671763">
+            <conditions>
+                <condition id="12" name="On retrieved media sources" sid="447538371766545" type="UserMedia" />
+            </conditions>
+            <actions>
+                <action id="0" name="Request camera" sid="668733613447565" type="UserMedia">
+                    <param id="0" name="Source">0</param>
+                    <param id="1" name="Preferred width">0</param>
+                    <param id="2" name="Preferred height">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="637085272447624">
+            <conditions>
+                <condition behavior="Button" id="1" name="On clicked" sid="561130869112968" type="TakeShot" />
+            </conditions>
+            <actions>
+                <action id="2" name="Snapshot" sid="384142164981777" type="UserMedia">
+                    <param id="0" name="Format">1</param>
+                    <param id="1" name="JPEG quality">100</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="453661569942492" type="Color_White" />
+                <action id="-16" name="Wait" sid="279407420605195" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="13" name="Invoke download" sid="836971397743551" type="Browser">
+                    <param id="0" name="URL">UserMedia.SnapshotURL</param>
+                    <param id="1" name="Filename">&quot;Foto.jpeg&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Botao</name>
+    <events>
+        <event-group description="" sid="815863881244694" title="Hover">
+            <sub-events>
+                <event-block sid="245818344257317">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="498609137502780" type="Touch">
+                            <param id="0" name="Object">BotaoSPR</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="989727467877156" type="BotaoSPR">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="106988957071670">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="505392325349552" type="Touch">
+                            <param id="0" name="Object">BotaoSPR</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="614058687730910" type="BotaoSPR">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

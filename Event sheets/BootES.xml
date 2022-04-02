@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>BootES</name>
+    <events>
+        <variable constant="0" name="FB" sid="915190197116890" static="0" type="number">1</variable>
+        <event-block sid="100687089690563">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="754038786144774" type="System" />
+                <condition id="-20" name="Is on mobile device" sid="859498445734903" type="System" />
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="591263263687609" type="Browser">
+                    <param id="0" name="Mode">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="484656543379464" title="BootAnim">
+            <sub-events>
+                <event-group description="" sid="427584451499507" title="StartScreenText">
+                    <sub-events>
+                        <event-block sid="589521824690866">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="201815983298831" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="478453422723683" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="910762988736098" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="933287592390985" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="745645966760237" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="524378672424280" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="152094090272140" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="485008285291780" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="535815821145831">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="166474908416952" type="Color_Black">
+                                            <param id="0" name="Unique ID">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="294472504583787" type="Color_Black">
+                                            <param id="0" name="Pin to">IndusLogoBoot</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="374349954953106">
+                    <conditions>
+                        <condition behavior="MoveTo" id="3" name="Is moving" sid="571899018362630" type="IndusLogoBoot" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="693401611201683" type="IndusLogoBoot">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="973981573884716">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="977372764943123" type="System">
+                            <param id="0" name="Layer">2</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="258013803568998" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="326559225520288" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action behavior="MoveTo" id="4" name="Move to XY" sid="192359617155282" type="IndusLogoBoot">
+                            <param id="0" name="X">525</param>
+                            <param id="1" name="Y">Self.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="399449559516673">
+                    <conditions>
+                        <condition behavior="MoveTo" id="0" name="On hit target position" sid="987763569133849" type="IndusLogoBoot" />
+                        <condition id="-1" name="Compare X" sid="179974689576647" type="IndusLogoBoot">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="X co-ordinate">525</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="120152619729385" type="System">
+                            <param id="0" name="Variable">FB</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="543718414498757" type="System">
+                            <param id="0" name="Seconds">7</param>
+                        </action>
+                        <action behavior="MoveTo" id="4" name="Move to XY" sid="602059404131971" type="IndusLogoBoot">
+                            <param id="0" name="X">-185</param>
+                            <param id="1" name="Y">Self.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="791884732448600">
+                    <conditions>
+                        <condition behavior="MoveTo" id="0" name="On hit target position" sid="567629170499815" type="IndusLogoBoot" />
+                        <condition id="-1" name="Compare X" sid="318774070640114" type="IndusLogoBoot">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="X co-ordinate">-185</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="169416064184075" type="System">
+                            <param id="0" name="Variable">FB</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="879011599427720" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="271633137293773" type="System">
+                            <param id="0" name="Layout">LockScreen</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="889452999081585">
+                    <conditions>
+                        <condition behavior="MoveTo" id="0" name="On hit target position" sid="505135400308635" type="IndusLogoBoot" />
+                        <condition id="-1" name="Compare X" sid="292234882610133" type="IndusLogoBoot">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="X co-ordinate">525</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="793771943794903" type="System">
+                            <param id="0" name="Variable">FB</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="303108639292657" type="System">
+                            <param id="0" name="Seconds">7</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="428131442419321" type="System">
+                            <param id="0" name="Layout">FBS_A</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="224977503504161" title="Carregar FB">
+            <sub-events>
+                <event-block sid="177900029982947">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="163379837426197" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Check item exists" sid="633784343867766" type="LocalStorage">
+                            <param id="0" name="Key">&quot;fb&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="916412989733250">
+                    <conditions>
+                        <condition id="9" name="On item exists" sid="764057252595981" type="LocalStorage">
+                            <param id="0" name="Key">&quot;fb&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Get item" sid="125256273232608" type="LocalStorage">
+                            <param id="0" name="Key">&quot;fb&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="536724078202160">
+                    <conditions>
+                        <condition id="1" name="On item get" sid="898545709967490" type="LocalStorage">
+                            <param id="0" name="Key">&quot;fb&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="693512305719493" type="System">
+                            <param id="0" name="Variable">FB</param>
+                            <param id="1" name="Value">LocalStorage.ItemValue</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="167046044022706" title="Firebase Start">
+            <sub-events>
+                <event-block sid="944050519350266">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="198604147624049" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="822981889687267" type="FirebaseAPIV3">
+                            <param id="0" name="Instance variable">PreviewStart</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Initialize" sid="405054643526059" type="FirebaseAPIV3">
+                            <param id="0" name="Api key">&quot;AIzaSyB-UuQZVo1kfhjctrqdMOPYL17eXe49a-c&quot;</param>
+                            <param id="1" name="Auth domain">&quot;indus-75be6.firebaseapp.com&quot;</param>
+                            <param id="2" name="Database URL">&quot;https://indus-75be6-default-rtdb.firebaseio.com/&quot;</param>
+                            <param id="3" name="Storage bucket">&quot;gs://indus-75be6.appspot.com&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="133749427849107" type="FirebaseAPIV3">
+                            <param id="0" name="Instance variable">PreviewStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="203206304975302">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="127844657292404" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="466310350274994" type="LocalStorage">
+                    <param id="0" name="Key">&quot;email&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="295992530981354" type="LocalStorage">
+                    <param id="0" name="Key">&quot;password&quot;</param>
+                </action>
+                <action id="1" name="Set cursor from sprite" sid="144319608511241" type="Mouse">
+                    <param id="0" name="Sprite">CUR_Default</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="557579745110068">
+            <conditions>
+                <condition id="9" name="On item exists" sid="745386194880427" type="LocalStorage">
+                    <param id="0" name="Key">&quot;email&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="556995009147261" type="LocalStorage">
+                    <param id="0" name="Key">&quot;email&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="605952622364320">
+            <conditions>
+                <condition id="9" name="On item exists" sid="980774300871240" type="LocalStorage">
+                    <param id="0" name="Key">&quot;password&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="705395814692997" type="LocalStorage">
+                    <param id="0" name="Key">&quot;password&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="845670621579372">
+            <conditions>
+                <condition id="1" name="On item get" sid="518647270427215" type="LocalStorage">
+                    <param id="0" name="Key">&quot;email&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="158392027772500" type="System">
+                    <param id="0" name="Variable">email</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="290889776854413">
+            <conditions>
+                <condition id="1" name="On item get" sid="927099245857709" type="LocalStorage">
+                    <param id="0" name="Key">&quot;password&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="397246654041081" type="System">
+                    <param id="0" name="Variable">senha</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="313932536680650">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="289344962151949" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="790947168315990" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="2" name="Login" sid="638890319254203" type="Authentication">
+                    <param id="0" name="Email">email</param>
+                    <param id="1" name="Password">senha</param>
+                    <param id="2" name="Remember">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="307664959692289">
+            <conditions>
+                <condition id="34" name="Is login" sid="196563758791301" type="Authentication" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="436383025533296" type="System">
+                    <param id="0" name="Variable">FB</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="307827313789249">
+            <conditions>
+                <condition id="34" inverted="1" name="Is login" sid="858044936057142" type="Authentication" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="692037722470034" type="System">
+                    <param id="0" name="Variable">FB</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
