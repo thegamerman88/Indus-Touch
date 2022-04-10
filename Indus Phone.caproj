@@ -2,7 +2,7 @@
 <c2project>
     <name>Indus Phone</name>
     <description>Indus para celular!</description>
-    <version>orb221303</version>
+    <version>orb221004</version>
     <author></author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -623,7 +623,7 @@
                         </behaviors>
                         <animation-folder>
                             <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="294992532998370" speed="5">
-                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thegamerman88\Pictures\Indus\Icones\inconfigs\Nova pasta\home.png">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thegamerman88\Documents\GitHub\imagensindus\Icones\inconfigs\Sky\Abas\home.png">
                                     <collision-poly>
                                         <point x="0.261719" y="0.261719" />
                                         <point x="0.5" y="0.0664063" />

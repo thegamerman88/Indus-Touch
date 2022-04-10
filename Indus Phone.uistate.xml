@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="0">Boot</layout>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/PluginsGlobais/" />
+        <folder expanded="1" path="object-folder/PluginsGlobais/Firebase/" />
+        <folder expanded="1" path="object-folder/Iniciar/" />
+        <folder expanded="1" path="object-folder/Iniciar/Boot/" />
+        <folder expanded="1" path="object-folder/ObjetosNãoUnicos/" />
+        <folder expanded="1" path="object-folder/StatusBar/" />
+        <folder expanded="1" path="object-folder/HomePage/" />
+        <folder expanded="1" path="object-folder/NavBar/" />
+        <folder expanded="1" path="object-folder/NavBar/HomePage/" />
+        <folder expanded="1" path="object-folder/Apps/" />
+        <folder expanded="1" path="object-folder/Apps/InNote/" />
+        <folder expanded="1" path="object-folder/Apps/InBrowser/" />
+        <folder expanded="1" path="object-folder/Apps/InCam/" />
+        <folder expanded="1" path="object-folder/Apps/InConfig/" />
+        <folder expanded="1" path="object-folder/Apps/InConfig/Icones/" />
+        <folder expanded="1" path="object-folder/Apps/InConfig/User/" />
+        <folder expanded="1" path="object-folder/button/" />
+        <folder expanded="1" path="object-folder/FirstBoot Setup/" />
+        <folder expanded="1" path="object-folder/Indus Account/" />
+        <folder expanded="1" path="object-folder/TxtBoxBG/" />
+        <folder expanded="1" path="object-folder/lock/" />
+        <folder expanded="1" path="object-folder/CUR_Default/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Iniciar/" />
+        <folder expanded="1" path="layout-folder/FirstBoot Setup/" />
+        <folder expanded="1" path="layout-folder/HomePage/" />
+        <folder expanded="1" path="layout-folder/Apps/" />
+        <folder expanded="1" path="layout-folder/Apps/InCam/" />
+        <folder expanded="1" path="layout-folder/Apps/InNote/" />
+        <folder expanded="1" path="layout-folder/Apps/InBrowser/" />
+        <folder expanded="1" path="layout-folder/Apps/InConfig/" />
+        <folder expanded="1" path="layout-folder/Apps/InConfig/Configs/" />
+        <folder expanded="1" path="layout-folder/Apps/Template/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Iniciar/" />
+        <folder expanded="1" path="event-folder/HomePage/" />
+        <folder expanded="1" path="event-folder/Funcoes/" />
+        <folder expanded="1" path="event-folder/Apps/" />
+        <folder expanded="1" path="event-folder/Apps/InNote/" />
+        <folder expanded="1" path="event-folder/Apps/InBrowser/" />
+        <folder expanded="1" path="event-folder/Apps/InCam/" />
+        <folder expanded="1" path="event-folder/Apps/InConfig/" />
+        <folder expanded="1" path="event-folder/Apps/InConfig/Configs/" />
+        <folder expanded="1" path="event-folder/FirstBoot Setup/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/IndusLogoBoot/" />
+        <folder expanded="1" path="animation-folder/Color_Black/" />
+        <folder expanded="1" path="animation-folder/Color_White/" />
+        <folder expanded="1" path="animation-folder/Wallpaper/" />
+        <folder expanded="1" path="animation-folder/PFP/" />
+        <folder expanded="1" path="animation-folder/PFPPreview/" />
+        <folder expanded="1" path="animation-folder/CarregandoSPR/" />
+        <folder expanded="1" path="animation-folder/InNote_Icon/" />
+        <folder expanded="1" path="animation-folder/InBrowser_Icon/" />
+        <folder expanded="1" path="animation-folder/InCam_Icon/" />
+        <folder expanded="1" path="animation-folder/InCfg_Icon/" />
+        <folder expanded="1" path="animation-folder/Lock/" />
+        <folder expanded="1" path="animation-folder/Reboot/" />
+        <folder expanded="1" path="animation-folder/Home/" />
+        <folder expanded="1" path="animation-folder/TakeShot/" />
+        <folder expanded="1" path="animation-folder/User/" />
+        <folder expanded="1" path="animation-folder/HomeCfg/" />
+        <folder expanded="1" path="animation-folder/User2/" />
+        <folder expanded="1" path="animation-folder/BordaOpc/" />
+        <folder expanded="1" path="animation-folder/BotaoSPR/" />
+        <folder expanded="1" path="animation-folder/swipe/" />
+        <folder expanded="1" path="animation-folder/swipe2/" />
+        <folder expanded="1" path="animation-folder/CUR_Default/" />
+    </folders-expanded>
+</c2uistate>
